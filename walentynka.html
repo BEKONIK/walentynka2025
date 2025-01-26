@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Moja walentynka</title>
+</head>
+<body>
+    <div id="middle">
+        <h2 id="pytanie">Zostaniesz <b>moją</b> walentynką?</h2>
+        <div id="buttons">
+            <button id="nie">NIE</button>
+            <a href="formularz.html"><button type="submit">TAK</button></a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("nie").onclick = function(){
+            document.getElementById("nie").disabled = true;
+            document.getElementById("pytanie").textContent = "Chyba omsknął ci się palec, wybierz jeszcze raz :)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Moja walentynka</title>
+</head>
+<body>
+    <div id="middle2">
+        <p id="odp">Jeszcze test czy nie jesteś robotem</p><br>
+        <img id="recaptcha" src="recaptcha.png" alt="">
+
+    </div>
+
+    <script>
+        var pht = document.getElementById("recaptcha");
+        var odp = document.getElementById("odp");
+
+        pht.onclick = function(){
+            pht.setAttribute("src","heartEmoji.png");
+            pht.style.width = "200px";
+            pht.style.cursor = "default";
+            odp.innerHTML = "Żartuję. Wiem, że to ty misiaczku. <br> Tak właśnie masz na nazwisko. <br> Kocham cię";
+        }
+    </script>
+</body>
+</html>

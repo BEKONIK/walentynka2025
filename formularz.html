@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Weryfikacja</title>
+</head>
+<body>
+    <section id="formularz">
+        <h3><img src="thinkingEmoji.png">
+            Jeszcze tylko krótka weryfikacja, żeby sprawdzić czy aby na pewno jesteś odpowiednią osobą na to stanowisko</h3>
+        <div class="box">
+            <input type="text" id="imie" required>
+            <label class="text" for="imie">Wpisz swoje imię</label>
+        </div>
+        <div class="box">
+            <input type="text" id="nazwisko" required>
+            <label class="text" for="nazwisko">Wpisz swoje nazwisko</label>
+        </div>
+        <div class="box">
+            <select id="select" onchange="selectSign(this.value)">
+                <option value="Wodnik">Wodnik</option>
+                <option value="Ryby">Ryby</option>
+                <option value="Baran">Baran</option>
+                <option value="Koziorożec">Koziorożec</option>
+                <option value="Bliźnięta">Bliźnięta</option>
+                <option value="Byk">Byk</option>
+                <option value="Rak">Rak</option>
+                <option value="Lew">Lew </option>
+                <option value="Waga">Waga</option>
+                <option value="Skorpion">Skorpion</option>
+                <option value="Strzelec">Strzelec</option>
+                <option value="Panna">Panna</option>
+            </select>
+            <label>Wybierz swój znak zodiaku:</label>
+        </div>
+        <div class="box">
+            <p id="value">-</p>
+            <input type="range" id="myRange" value="1" min="1" max="100" required> 
+            <label>Podaj swój wiek:</label>
+        </div>
+        <div class="box">
+            <input id="submit" type="submit" value="Zatwierdź">
+        </div>
+        <p id="error"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
